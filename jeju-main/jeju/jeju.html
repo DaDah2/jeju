@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/optimal-solutions" rel="stylesheet">
+                
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul,li {list-style: none;}
+        a {text-decoration: none;}
+        #wrap {
+            position: relative;
+        }
+        .main {
+            width: 1920px;
+            height: 1020px;
+            position: absolute;
+        }
+        .main img {
+            width: 100%;
+            height: 100%;
+        }
+        .main h1 {
+            position: absolute;
+            margin-left: 5vw;
+            margin-top: 28vh;
+            font-size: 8rem;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+           
+        }
+        .box {
+            width: 20vw;
+            height: 7vh;
+            border: 3px solid white;
+            border-radius: 20px;
+            position: absolute;
+            margin-left: 5vw;
+            margin-top: 48vh;
+        }
+        .box p {
+            width: 14vw;
+            height: 5vh;
+            font-size: 1.5rem;
+            line-height: 4rem;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            margin-left: 20px;
+        }
+        a {cursor: pointer; display: block;}
+        .box img {
+            width: 30px;
+            height: 30px;
+            margin-top: -33px;
+            margin-right: 20px;
+            float: right;
+            
+        }
+        #slideshow{
+            margin-top: 20vh;
+            margin-left: 40vw;
+            width: 2000px;
+            height: 700px;
+            /* border: 1px solid red; */
+            position: absolute;
+            overflow: hidden;
+        }
+        .slides {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2500px;
+            transition: left 0.5s ease-out;
+        }
+        .slides li {
+            border-radius: 10px;
+            width: 450px;
+            height: 650px;
+            margin-left: 150px;
+            float: left;
+
+        }
+        .slides li img {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+        }
+        .slides li:first-child h1 {
+            margin-left: 16vw;
+        }
+        .slides li h1 {
+            position: absolute;
+            margin-left: 14vw;
+            font-size: 7rem;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        .slides li h3 {
+            margin-top: 38vh;
+            margin-left: 2vw;
+            position: absolute;
+            font-family: 'Optimal Solutions', sans-serif;
+            font-weight: 500;
+            color: white;
+            font-size: 4.5rem;                                  
+        }
+        .slides li h3:hover {
+            opacity: 0.5;
+        }
+        .slides li p {
+            margin-top: 52vh;
+            margin-left: 2vw;
+            line-height: 1.5rem;
+            position: absolute;
+            font-size: 1rem;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+       
+
+        .controller span{
+            /* position: absolute; */
+            cursor: pointer;
+            opacity: 0.5;
+        }
+       /* .controller span:hover{
+           opacity: 1;
+       } */
+        .prev {
+            margin-left: 3vw;
+            margin-top: 30vh;
+        }
+       
+        .next{
+            margin-left: 29vw;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="main">
+            <h1>Jeju-do</h1>
+            <a href="#"><div class="box"> <p>Search anywhere</p> <img src="img/search.png" alt=""></div></a>
+            <img src="img/main.png" alt="">
+        </div>
+         <div id="slideshow">
+        <ul class="slides">
+            <li><a href="bijarim.html">
+                <h1>01</h1>
+                <h3>Bijarim</h3>
+                <p>If you want to fall into the mystery of the <br> forest where millennia have melted, you <br>
+                    have to walk slowly and breathe heavily. <br> And it’s good to stop for a moment and<br> 
+                    say hello to an extremely big tree.</p></a>
+                <img src="img/IMG_1763.png" alt="">
+            </li>
+            <li><a href="hangpa.html">
+                <h1>02</h1>
+                <h3>Hangpaduri</h3>
+                <p>
+                    Historic Site of Anti-Mongolian Struggle in  <br>
+                    Hangpadu-ri is where the Sambyeolcho military <br>
+                    unit of the Goryeo dynasty resisted the invasion <br>
+                    of Mongolia until the last possible moment.<br> 
+                    The site houses an exhibition hall,a monument</p></a>
+        <img src="img/IMG_6255.png" alt="">
+            </li>
+            <li>
+                <h1>03</h1>
+                <h3>Andoloreum</h3>
+                <p>
+                    Andol Oreum Volcanic Cone, which is on the <br>
+                    southwestern side, gets its name because <br>
+                    it stands  inside, and it is possible to reach the <br>
+                    volcanic cone by going around into Songdang 
+                    <br>Cemetery from Utsongdang.</p>
+                <img src="img/IMG_7451.jpg" alt=""></li>
+            <li>
+                <h1>04</h1>
+                <h3>Yongmeori</h3>
+                <p>Yongmeori is a sandstone bed created by layers<br>
+                     of sand that have been deposited for tens of <br>
+                     millions of years. The mysterious scenery of the <br>
+                     coast is enough to make anyone who witnesses <br>
+                     it exclaim in wonder.</p>
+                <img src="img/16.png" alt=""></li>
+            <li>
+                <h1>05</h1>
+                <h3>Aewol</h3>
+                <p>A walkway along the shore connected from Jeju<br>
+                     northwestern Aewol-ri town to Gwakji Gwamul<br>
+                    beach. A quiet walkway from Handam town.</p><img src="img/IMG_6766.jpg" alt=""></li>
+        </ul>
+        <div class="controller">
+            <span><img class="prev" src="img/angle-left.png" alt=""></span>
+            <span><img class="next" src="img/angle-right.png" alt=""></span>
+           
+        </div>
+        </div>
+    </div>  
+
+    <script>
+        const slides = document.querySelector('.slides');//전체 슬라이드 컨테이너
+        const slideImg = document.querySelectorAll('.slides li');//모든 슬라이드들
+        
+
+        let currentIdx = 0; //현재슬라이드 인덱스
+        const slideCount = slideImg.length //슬라이드 개수
+        const prev = document.querySelector('.prev'); //이전버튼
+        const next = document.querySelector('.next'); //다음버튼
+        const slideWidth = 700; //슬라이드 한개의 넓이
+        const slideMargin = 100; //슬라이드간의 margin값
+
+        console.log.slides
+        //전체슬라이드 컨테이너 넓이설정
+        slides.style.width = (slideWidth + slideMargin) *slideCount + 'px';
+        function moveSlide(num) {
+            slides.style.left = -num * 600 + 'px';
+            currentIdx = num;
+        }
+        prev.addEventListener('click',function (){
+            //첫번째 슬라이드로 표시 됐을 때 이전 버튼을 눌러도 반응없게 하기 위해 currentIdx !== 0일때만 moveSLide함수 불러옴 
+            if (currentIdx !== 0) moveSlide(currentIdx -1);
+        });
+        next.addEventListener('click',function(){
+            //마지막 슬라이드로 표시 됐을 때 다음버튼을 눌러도 반응없게 하기 위해 currentIdx !== -1일때만 moveSLide함수 불러옴 
+            if (currentIdx !== slideCount -1){
+                moveSlide(currentIdx +1);
+            }
+        });
+
+         //자동슬라이드
+        var timer = undefined;
+        var slideWrapper = document.querySelector('#slideshow');
+
+        function autoSlide(){
+            if(timer == undefined){
+                timer = setInterval(function(){
+                    moveSlide(currentIdx + 1);
+                }, 3000);
+            }
+        }
+        autoSlide();
+
+        function stopSlide(){
+            clearInterval(timer);
+            timer = undefined;
+        }
+
+        slideWrapper.addEventListener('mouseenter', function(){
+            stopSlide();
+        });
+
+        slideWrapper.addEventListener('mouseleave', function(){
+            autoSlide();
+        });
+        
+   
+
+    </script>
+</body>
+</html>
